@@ -70,5 +70,6 @@
 	// "postCreateCommand": "pip3 install --user -r requirements.txt",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "vscode"
+	"remoteUser": "vscode",
+	"mounts": [ "source=/home/bilel/MLops/mlops-track-perf-branches,target=/workspaces/ML_Model_Metrics,type=bind,consistency=cached"]
 }
