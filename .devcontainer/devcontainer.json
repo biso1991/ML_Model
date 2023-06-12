@@ -41,7 +41,7 @@
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
 			"settings": { 
-				"python.defaultInterpreterPath": "/usr/local/bin/python",
+				"python.defaultInterpreterPath": "/home/vscode/venv/bin/python",
 				"python.linting.enabled": true,
 				"python.linting.pylintEnabled": true,
 				"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
@@ -71,5 +71,8 @@
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
-	"mounts": [ "source=/home/bilel/Desktop/mlops-track-perf-branches,target=/workspaces/ML_Model,type=bind,consistency=cached"]
+	// "mounts": [ "source=/home/bilel/Desktop/mlops-track-perf-branches,target=/workspaces/ML_Model,type=bind,consistency=cached"]
+	"mounts": [
+		"source=${localEnv:HOME}/Desktop/mlops-track-perf-branches,target=/workspaces/ML_Model/myfolder,type=bind,consistency=cached"
+	]	
 }
