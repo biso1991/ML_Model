@@ -18,7 +18,7 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 
 # Load data
-fulldf = pd.read_csv('data_processed.csv')
+fulldf = pd.read_csv('./data_processed.csv')
 
 # Extract X and y variables and values
 x = fulldf.drop(['satisfaction'], axis = 1)
